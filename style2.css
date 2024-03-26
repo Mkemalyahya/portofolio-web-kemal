@@ -1,0 +1,101 @@
+:root{
+    --primaryTextColor: #232e35
+    --secondaryTextColor: #656d72
+
+    --borderColor: #f1f1f1
+    --lineColor: #d9d9d9
+
+    --primaryBackgroundColor: #fff
+    --secondaryBackgroundColor: #fbfbfb
+    --ThirdBackgroundColor: #f5f3fe
+
+    --primaryIconColor: #7e74f1
+    --primaryIconColorhover: #5d51e8
+
+    --sectionPadding: 6rem 0;
+    --itemBorderradius: 0.7rem;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+
+}
+h1,h2,h3,h4,h5, strong{
+
+color: var(--primaryTextColor);
+}
+
+p{
+     font-size: 1rem; /* 16px */
+    line-height: 1.9rem;
+}
+p, span, label, input, textarea, li{
+    color: var(--secondaryTextColor);
+}
+
+a{
+    text-decoration: none;
+}
+
+.maincontainer{
+    width: 1200px;
+margin: 0 auto;
+}
+
+@media  screen and (max-width: 1200px) {
+    .maincontainer{
+        width: 90%;
+    }
+}
+
+/* logo navigation dan menu */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+
+}
+
+.logo a{
+    color: var(--primaryTextColor);
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a{
+    color: var(--primaryTextColor);
+}
+
+/* burger */
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin: 7px;
+    transition: all .3s;
+    z-index: 99;
+}
